@@ -44,7 +44,7 @@ EXPOSE 7681
 
 USER slate
 
-ENTRYPOINT ["ttyd"]
+ENTRYPOINT ["ttyd","-p $PROT"]
 
 CMD ["bash"]
 
